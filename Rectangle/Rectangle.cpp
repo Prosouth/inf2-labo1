@@ -1,16 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Rectangle.cpp
- * Author: prosouth
- * 
- * Created on 20 February 2017, 17:12
- */
-
+/* ---------------------------
+ Laboratoire: 1 - Class Carré, Triangle, Rectangle 
+ Fichier    : Rectangle.cpp
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 février 2017
+ 
+ But        : Le but de ce laboratoire est d'implémenter 4 classes avec de
+ *            l'encapsulation      
+ 
+ Remarque(s) : 
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170109
+ --------------------------- */
 #include "Rectangle.h"
 #include <iostream>
 using namespace std;
@@ -21,18 +21,18 @@ Rectangle::Rectangle()
    this->longueur = 0.0;
 }
 
-Rectangle::Rectangle(double largeur, double longueur)
+Rectangle::Rectangle(const double largeur, const double longueur)
 {
    this->largeur = largeur;
    this->longueur = longueur;
 }
 
-void Rectangle::setLargeur(double largeur)
+void Rectangle::setLargeur(const double largeur)
 {
    this->largeur = largeur;
 }
 
-void Rectangle::setLongueur(double longueur)
+void Rectangle::setLongueur(const double longueur)
 {
    this->longueur = longueur;
 }

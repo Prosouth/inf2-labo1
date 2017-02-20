@@ -1,15 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Cercle.cpp
- * Author: prosouth
- * 
- * Created on 20 February 2017, 17:44
- */
+/* ---------------------------
+ Laboratoire: 1 - Class Carré, Triangle, Rectangle 
+ Fichier    : Cercle.cpp
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 février 2017
+ 
+ But        : Le but de ce laboratoire est d'implémenter 4 classes avec de
+ *            l'encapsulation      
+ 
+ Remarque(s) : 
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170109
+ --------------------------- */
 #include "Cercle.h"
 #include <iostream>
 using namespace std;
@@ -21,12 +22,12 @@ Cercle::Cercle()
    rayon = 0.0;
 }
 
-Cercle::Cercle(double rayon)
+Cercle::Cercle(const double rayon)
 {
    this->rayon = rayon;
 }
 
-void Cercle::setRayon(double rayon)
+void Cercle::setRayon(const double rayon)
 {
    this->rayon = rayon;
 }

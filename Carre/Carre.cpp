@@ -1,19 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Carre.cpp
- * Author: prosouth
- * 
- * Created on 20 February 2017, 17:45
- */
-
+/* ---------------------------
+ Laboratoire: 1 - Class Carré, Triangle, Rectangle 
+ Fichier    : Carre.cpp
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 février 2017
+ 
+ But        : Le but de ce laboratoire est d'implémenter 4 classes avec de
+ *            l'encapsulation      
+ 
+ Remarque(s) : 
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170109
+ --------------------------- */
 #include "Carre.h"
 #include <iostream>
-
 using namespace std;
 
 
@@ -22,13 +21,12 @@ Carre::Carre()
    this->cote = 0.0;
 }
 
-
-Carre::Carre(double cote)
+Carre::Carre(const double cote)
 {
    this->cote = cote;
 }
 
-void Carre::setCote(double cote)
+void Carre::setCote(const double cote)
 {
    this->cote = cote;
 }

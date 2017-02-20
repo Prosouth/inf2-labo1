@@ -1,16 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Triangle.cpp
- * Author: prosouth
- * 
- * Created on 20 February 2017, 17:44
- */
-
+/* ---------------------------
+ Laboratoire: 1 - Class Carré, Triangle, Rectangle 
+ Fichier    : Triangle.cpp
+ Auteur(s)  : Kevin Cristi et Sébastien Saez
+ Date       : 20 février 2017
+ 
+ But        : Le but de ce laboratoire est d'implémenter 4 classes avec de
+ *            l'encapsulation      
+ 
+ Remarque(s) : 
+ 
+ Compilateur : g++ (GCC) 6.3.1 20170109
+ --------------------------- */
 #include "Triangle.h"
 #include <iostream>
 using namespace std;
@@ -21,18 +21,18 @@ Triangle::Triangle()
    this->hauteur = 0.0;
 }
 
-Triangle::Triangle(double base, double hauteur)
+Triangle::Triangle(const double base, const double hauteur)
 {
    this->base = base;
    this->hauteur = hauteur;
 }
  
-void Triangle::setBase(double base)
+void Triangle::setBase(const double base)
 {
    this->base = base;
 }
 
-void Triangle::setHauteur(double hauteur)
+void Triangle::setHauteur(const double hauteur)
 {
    this->hauteur = hauteur;
 }
