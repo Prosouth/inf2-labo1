@@ -22,9 +22,8 @@ Rectangle::Rectangle()
 }
 
 Rectangle::Rectangle(const double largeur, const double longueur)
+: largeur(largeur), longueur(longueur)
 {
-   this->largeur = largeur;
-   this->longueur = longueur;
 }
 
 void Rectangle::setLargeur(const double largeur)

@@ -16,8 +16,7 @@
 
 class Carre {
 public:
-   Carre();
-   Carre(const double cote);
+   Carre(const double cote = 0.0);
    void setCote(const double cote);
    double getSurface() const;
    void getDetails() const;

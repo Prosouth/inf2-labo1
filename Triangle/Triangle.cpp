@@ -22,9 +22,8 @@ Triangle::Triangle()
 }
 
 Triangle::Triangle(const double base, const double hauteur)
+: base(base), hauteur(hauteur)
 {
-   this->base = base;
-   this->hauteur = hauteur;
 }
  
 void Triangle::setBase(const double base)

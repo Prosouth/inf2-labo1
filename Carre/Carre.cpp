@@ -15,18 +15,12 @@
 #include <iostream>
 using namespace std;
 
-
-Carre::Carre()
-{
-   this->cote = 0.0;
-}
-
 Carre::Carre(const double cote)
+: cote(cote)
 {
-   this->cote = cote;
 }
 
-void Carre::setCote(const double cote)
+void Carre::setCote(const double cote) 
 {
    this->cote = cote;
 }

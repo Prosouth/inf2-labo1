@@ -23,8 +23,8 @@ Cercle::Cercle()
 }
 
 Cercle::Cercle(const double rayon)
+: rayon(rayon)
 {
-   this->rayon = rayon;
 }
 
 void Cercle::setRayon(const double rayon)
