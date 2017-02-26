@@ -18,8 +18,8 @@ using namespace std;
 const double PI = 3.1415;
 
 Cercle::Cercle()
+: rayon(0.0)
 {
-   rayon = 0.0;
 }
 
 Cercle::Cercle(const double rayon)
@@ -29,7 +29,10 @@ Cercle::Cercle(const double rayon)
 
 void Cercle::setRayon(const double rayon)
 {
-   this->rayon = rayon;
+   if(rayon > 0)
+   {
+      this->rayon = rayon;
+   }
 }
 
 double Cercle::getSurface() const

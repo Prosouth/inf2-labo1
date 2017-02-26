@@ -16,9 +16,8 @@
 using namespace std;
 
 Triangle::Triangle()
+: base(0.0), hauteur(0.0)
 {
-   this->base = 0.0;
-   this->hauteur = 0.0;
 }
 
 Triangle::Triangle(const double base, const double hauteur)
@@ -28,12 +27,18 @@ Triangle::Triangle(const double base, const double hauteur)
  
 void Triangle::setBase(const double base)
 {
-   this->base = base;
+   if(base > 0)
+   {
+      this->base = base;
+   }
 }
 
 void Triangle::setHauteur(const double hauteur)
 {
-   this->hauteur = hauteur;
+   if(hauteur > 0)
+   {
+      this->hauteur = hauteur;
+   }
 }
 
 double Triangle::getSurface() const

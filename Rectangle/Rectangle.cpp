@@ -16,9 +16,8 @@
 using namespace std;
 
 Rectangle::Rectangle()
+: largeur(0.0), longueur(0.0)
 {
-   this->largeur = 0.0;
-   this->longueur = 0.0;
 }
 
 Rectangle::Rectangle(const double largeur, const double longueur)
@@ -28,12 +27,18 @@ Rectangle::Rectangle(const double largeur, const double longueur)
 
 void Rectangle::setLargeur(const double largeur)
 {
-   this->largeur = largeur;
+   if(largeur > 0)
+   {
+      this->largeur = largeur;
+   }
 }
 
 void Rectangle::setLongueur(const double longueur)
 {
-   this->longueur = longueur;
+   if(longueur > 0)
+   {
+      this->longueur = longueur;
+   }
 }
 
 double Rectangle::getSurface() const

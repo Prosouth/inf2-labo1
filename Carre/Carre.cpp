@@ -22,7 +22,10 @@ Carre::Carre(const double cote)
 
 void Carre::setCote(const double cote) 
 {
-   this->cote = cote;
+   if(cote > 0)
+   {
+      this->cote = cote;
+   }
 }
 
 double Carre::getSurface() const
